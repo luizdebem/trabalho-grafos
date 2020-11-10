@@ -31,7 +31,7 @@ function App() {
         cargas do estado, deseja oferecer aos motoristas de sua frota um mecanismo que os
         auxilie a selecionar o caminho de menor custo entre quaisquer duas cidades por ela
         servidas (as cidades são apresentadas na figura e os custos de transportes entre as duas
-        cidades na <a href="#" onClick={() => { handleToggleImage() }}>matriz valorada</a>). <br />
+        cidades na <button className="link" onClick={() => { handleToggleImage() }}>matriz valorada</button>). <br />
         Desenvolver uma aplicação para mostrar o caminho de custo mínimo entre duas
         cidades quaisquer servidas pela empresa e as cidades pelas que o transporte deverá
         passar para chegar da cidade origem a cidade destino.
@@ -42,6 +42,9 @@ function App() {
       <img src={image} alt="Mapa" className="image" />
 
       <Form onSubmit={handleSubmit} className="center">
+        {caminhoMinimo.length > 0 && <p className="resposta">Resposta: {caminhoMinimo.map((aresta, indice, array) => {
+          return array.length - 1 === indice ? aresta : aresta + ' -> ';
+        })}</p>}
         <Form.Group controlId="exampleForm.ControlSelect1">
           <Form.Label>Cidade origem:</Form.Label>
           <Form.Control as="select" onChange={e => { setCidadeOrigem(e.target.value) }}>
@@ -95,10 +98,6 @@ function App() {
         </Form.Group>
 
         <Button type="submit" variant="primary" className="mb-3">Calcular o menor caminho</Button>
-
-        {caminhoMinimo.length > 0 && <p>Resposta: {caminhoMinimo.map((aresta, indice, array) => {
-          return array.length - 1 === indice ? aresta : aresta + ' -> ';
-        })}</p>}
 
       </Form>
     </div>

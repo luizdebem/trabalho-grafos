@@ -2,6 +2,7 @@
   min-height: 100vh;
   background-color: #cecece;
   padding: 15px;
+  font-size: 1.1em;
 }
 
 .center {
@@ -21,4 +22,27 @@
   text-align: justify;
   margin-bottom: 15px;
   max-width: 740px;
+}
+
+.resposta {
+  text-align: center;
+  padding: 15px;
+  border: 1px solid black;
+}
+
+.link {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  border: none;
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.link:hover {
+  text-decoration: underline;
+}
+.link:focus {
+  outline: none;
 }
