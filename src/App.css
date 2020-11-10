@@ -1,5 +1,5 @@
 .main {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #cecece;
   padding: 15px;
 }
@@ -13,4 +13,12 @@
 
 .image {
   max-width: 100%;
+  margin-bottom: 25px;
+}
+
+
+.enunciado {
+  text-align: justify;
+  margin-bottom: 15px;
+  max-width: 740px;
 }
