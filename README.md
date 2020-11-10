@@ -1,6 +1,6 @@
 # Trabalho I - Programação Linear e Grafos
 ### Distância mínima entre as cidades no mapa, de acordo com a matriz valorada:
-![Matriz valorada](https://lh5.googleusercontent.com/zzbBndPdaPJhCJEusgE36hcH-IouWbyR1Fju8nOr8CmLG8FvD8hEBLVxctzQDnXIT-AFD5zRX2qFA4pHil8p=w1920-h912)
+![Matriz valorada](http://trabalho-grafos.s3-website-us-east-1.amazonaws.com/static/media/matrizValorada.365411bf.png)
 
 ## Available Scripts
 
